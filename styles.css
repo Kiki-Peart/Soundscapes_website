@@ -221,6 +221,13 @@ button:focus-visible {
   font-size: 1.35rem;
 }
 
+.cta-panel {
+    color: #fff; 
+    background: 
+    var(--purple-dark); 
+    border-radius: 1.25rem; 
+}
+
 .genre-card {
   transition: transform .25s ease,
               box-shadow .25s ease;
