@@ -16,23 +16,60 @@
 <body>
 
     <!-- Main site header and responsive Bootstrap navigation -->
-    <a href="#main-content" class="skip-link">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
         Skip to main content
     </a>
 
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="index.html" class="navbar-brand">
-                <span aria-hidden="true">♪</span>
-                Dublin Soundscape
-            </a>
+    < <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+            <div class="container">
 
-            <ul class="navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="genres.html">Genres</a></li>
-                <li><a href="venues.html">Venue Guide</a></li>
-                <li><a href="planning.html">Plan a Night</a></li>
-            </ul>
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="logo-mark" aria-hidden="true">♪</span>
+                    Dublin Soundscape
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="genres.html">
+                                Genres
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="venues.html">
+                                Venue Guide
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="planning.html">
+                                Plan a Night
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </nav>
     </header>
 
