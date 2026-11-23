@@ -102,3 +102,241 @@ button:focus-visible {
 .navbar-toggler-icon {
   filter: invert(1);
 }
+
+/* Hero */
+
+.hero {
+  padding: 4.75rem 0 4rem;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    var(--purple-dark),
+    var(--purple) 58%,
+    var(--teal)
+  );
+}
+
+.hero h1 {
+  max-width: 13ch;
+  font-weight: 850;
+  font-size: clamp(2.4rem, 9vw, 5.2rem);
+  line-height: .98;
+}
+
+.hero p {
+  max-width: 42rem;
+  font-size: 1.12rem;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 800;
+  font-size: .82rem;
+}
+
+.section-space {
+  padding: 4rem 0;
+}
+
+.page-banner {
+  padding: 3.5rem 0;
+  color: #fff;
+  background: linear-gradient(
+    120deg,
+    var(--purple-dark),
+    var(--purple)
+  );
+}
+
+.page-banner h1 {
+  font-weight: 800;
+}
+
+.section-title {
+  font-weight: 800;
+  color: var(--purple-dark);
+}
+
+/* Bootstrap Button Overrides */
+
+.btn-primary {
+  --bs-btn-bg: var(--purple);
+  --bs-btn-border-color: var(--purple);
+  --bs-btn-hover-bg: var(--purple-dark);
+  --bs-btn-hover-border-color: var(--purple-dark);
+}
+
+.btn-warning {
+  --bs-btn-bg: var(--gold);
+  --bs-btn-border-color: var(--gold);
+  color: #281338;
+  font-weight: 750;
+}
+
+/* Table Styling */
+
+.table thead th {
+  background: var(--purple-dark);
+  color: #fff;
+  border-color: #684281;
+}
+
+.table caption {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* Feature card styling */
+
+.feature-card,
+.genre-card,
+.tip-card {
+  height: 100%;
+  border: 0;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 .5rem 1.5rem rgba(34,20,48,.10);
+}
+
+.card-accent {
+  height: .45rem;
+  background: linear-gradient(
+    90deg,
+    var(--gold),
+    var(--teal)
+  );
+  border-radius: 1rem 1rem 0 0;
+}
+
+.icon-circle {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #f4eafa;
+  color: var(--purple);
+  font-size: 1.35rem;
+}
+
+.genre-card {
+  transition: transform .25s ease,
+              box-shadow .25s ease;
+}
+
+.genre-card:hover,
+.genre-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2.1rem rgba(54,21,81,.18);
+}
+
+.gallery-tile {
+  min-height: 13rem;
+  border-radius: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: end;
+  padding: 1.25rem;
+  overflow: hidden;
+  transition: transform .3s ease,
+              filter .3s ease;
+}
+
+.gallery-tile:hover {
+  transform: scale(1.025);
+  filter: saturate(1.2);
+}
+
+.gallery-one {
+  background: linear-gradient(
+    145deg,
+    #6f2da8,
+    #e64a8b
+  );
+}
+
+.gallery-two {
+  background: linear-gradient(
+    145deg,
+    #0a7180,
+    #48b7a5
+  );
+}
+
+.gallery-three {
+  background: linear-gradient(
+    145deg,
+    #b24d12,
+    #f2b84b
+  );
+}
+
+.gallery-four {
+  background: linear-gradient(
+    145deg,
+    #183e72,
+    #6d67c5
+  );
+}
+
+.video-frame {
+  border: .35rem solid #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 .75rem 2rem rgba(34,20,48,.16);
+  background: #000;
+}
+
+.quote {
+  border-left: .35rem solid var(--gold);
+  background: #f8f3fb;
+}
+
+.site-footer {
+  background: #151022;
+  color: #e9e3ef;
+}
+
+.site-footer a {
+  color: #ffd878;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.small-print {
+  color: #c9c0d0;
+}
+
+/* Progressive enhancement for tablets and larger screens */
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 6.5rem 0 5.5rem;
+  }
+
+  .section-space {
+    padding: 5rem 0;
+  }
+
+  .page-banner {
+    padding: 4.5rem 0;
+  }
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+  }
+}
