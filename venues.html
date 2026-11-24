@@ -124,10 +124,7 @@
                     <table
                         class="table table-striped table-hover align-middle"
                     >
-                        <caption>
-                            Comparison of common live music venue types
-                        </caption>
-
+                       
                         <thead>
                             <tr>
                                 <th scope="col">Venue type</th>
@@ -167,7 +164,7 @@
                                 <th scope="row">
                                     Festival or large stage
                                 </th>
-                                <td>100 to 500</td>
+                                <td>1000 to 5000</td>
                                 <td>Vibrant, energetic</td>
                                 <td>Contemporary, music artists, pop</td>
                                 <td>
@@ -212,6 +209,117 @@
                 </div>
             </div>
         </section>
+        <section class="content-section pt-0" aria labelledby="form-heading">
+            <div class="container">
+                <h2 id="form-heading" class="section-title h1">
+                    Share your experience
+                </h2>
+
+                <p class="col-lg-9">
+                    If you have a favourite venue or a memorable
+                    live music experience, we would love to hear
+                    about it. Your insights will help others plan
+                    their night of music.
+                </p>
+
+                <form
+                    action="https://formspree.io/f/xwlowzaa"
+                    method="POST"
+                    class="mt-4"
+                >
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            Your name
+                        </label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Email address
+                        </label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="_replyto"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">
+                            Your message
+                        </label>
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mb-2">
+                        Send message
+                    </button>
+                </form>
+            </div>
     </main>
+
+    <footer class="site-footer py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-7">
+                <h2 class="h5 text-white">Dublin Soundscapes</h2>
+                <p class="mb-0 small print"></p>
+                
+                    An independant website showcasing and celebrating the variety and
+                    community of Dublins live music culture.
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <h2 class="h5 text-white">Contact</h2>
+                <p class="mb-1">
+                    Questions or suggestions?
+                    <a href="mailto:mickey.peart@gmail.com ">Email the editor
+                    </a>
+                    
+                </p>
+
+                <p class="mb-0">
+                    <a href="https://www.eventbrite.ie/" target="_blank" rel="noopener">
+                        Visit the Eventbrite website for tickets and events
+                        <span class="visually-hidden">
+                            (opens in a new tab)
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <hr class="border-secondary my-4">
+        <p class="mb-0 small-print">
+            &copy; 2026 Dublin Soundscapes.
+            A website showcasing the live music scene in Dublin, Ireland.
+        </p>
+        </div>
+    </footer>
+    
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+  
+
 </body>
 </html>
+
